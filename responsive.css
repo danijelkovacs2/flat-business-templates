@@ -1,0 +1,156 @@
+@media screen and (max-width:1200px){
+	.contact_title{
+		width:100%;
+			padding:2%;
+		}
+		.contact_title p{
+			text-align:justify;
+			padding:0.5%;
+		}
+		
+	nav{
+		margin:2.8% 150px;
+	}
+	
+	
+	
+}
+
+
+
+
+
+@media screen and (max-width:1024px){
+	.forms{
+		width:100%;
+		border:none;
+		text-align:left;
+		padding:0;
+		
+		
+	}
+	
+	.forms [type="text"],.forms [type="email"]{
+		width:94%;
+		
+	}
+	.forms .code2{
+		width:150px;
+	}
+    .maps{
+		margin-right:30px;
+		float:left;
+		width:100%;
+		
+	}
+	.forms textarea{
+		width:94%;
+	}
+	.contact_title p{
+		padding:1.2%;
+	}
+	nav{
+		margin:2.7%;
+		float:left;
+		width:50%;
+	}
+	nav li a{
+		padding:4%;
+	}
+	
+	
+	
+	
+}
+
+
+
+
+
+
+@media screen and (max-width:768px){
+	
+	.contact_title p{
+		padding:2.5%;
+	}
+	nav{
+		float:left;
+		margin:3.9%;
+		width:100%;
+	}
+	.search{
+		float:left;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px){
+	.contact_title p{
+		padding:4%;
+	}
+	
+	nav{
+		float:left;
+		
+	}
+	nav li a{
+		padding-top:26px;
+		padding-bottom:26px;
+		
+	}
+}
+
+
+
+@media screen and (max-width:480px){
+	.forms [type="submit"]{
+		float:left;
+		margin:0;
+	}
+	.forms{
+		
+		margin-top:-10px;
+	}
+	.contact_title p{
+		padding:5.5%;
+	}
+	
+	
+	nav{
+		display:none;
+	}
+	.dropdown{
+		display:block;
+	}
+	.search{
+		float:left;
+	}
+	
+	.slide_title [type="button"]{
+		width:100%;
+	}
+}
+
+
+@media screen and(max-width:320px){
+	.contact_title p{
+		padding:30%;
+	}
+}
+
+
+
+
+

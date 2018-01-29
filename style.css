@@ -1,0 +1,795 @@
+ @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #515862;
+    font: 400 11px / 15px Ubuntu;
+    font-family: Ubuntu;
+    font-size: 11px;    
+}
+#wrapper{
+    width:100%;
+    
+}
+header{
+    width:100%;
+    min-height: 91px;
+    background: url(images/header_bg.png);
+    background-color: #ffffff;
+ 
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    border:none;
+	max-width:100%;
+	height:auto;
+   
+}
+.logo{
+    
+    float: left;
+    margin: 2.8% auto;
+}
+.logo img{
+    width:100%;
+    height:auto;
+}
+nav{
+    float: left;
+    margin: 2.8% 180px;
+    
+}
+nav li{
+    display: inline;
+}
+nav li a{
+    padding-top:35px;
+    padding-left:20px;
+    padding-right:20px;
+     padding-bottom:41px;
+   margin-left: 0px;
+    color: #515862;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: background 0.6s ease-in;
+    -webkit-transition: background 0.6s ease-in;
+    -moz-transition: background 0.6s ease-in;
+    -o-transition: background 0.6s ease-in;
+    -ms-transition: background 0.6s ease-in;
+   font-size: 18px;
+    color: #515862;
+    font: 700 18px Ubuntu;
+    
+}
+nav li a:hover,nav .active a{
+     background-color: #12a3d6;
+    border-style: solid;
+-moz-border-image: url(../images/hover.png)  stretch;
+-webkit-border-image: url(hover.png) 0 stretch;
+-o-border-image: url(ho ver.png) 0 stretch;
+border-image: url(../images/hover.png) 0 fill stretch;
+border-image-repeat:no-repeat;
+border-image-width:90px 0px 0px;
+color:#fff;
+border-right: 1px solid #fff;
+    text-decoration: none;
+      
+}
+.dropdown{
+	display:none;
+	margin:2% 15px;
+	float:right;
+}
+.dropdown-menu {
+	background:#12a3d6;
+	
+	margin:5px -100px;
+}
+.dropdown-menu li a{
+	color:#fff;
+	text-transform:uppercase;
+}
+
+
+.content{
+    width:100%;
+}
+
+.slide{
+    
+    width: 100%;
+    min-height: 295px;
+   background: url(images/slide.png) fixed;
+    background-position: center;
+  background-size: cover;    
+}
+.slide_title{
+    text-align: center;
+    padding: 18%;
+}
+.slide_title h1{
+   color: #cccece;
+    font: 400 60px BebasNeue;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 60px;
+   font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+.slide_title p{
+    color: #cccece;
+    font: 400 14px Ubuntu;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 2%;
+}
+
+.slide_title [type="button"]{
+    width: 243px;
+    height: 51px;
+    background: #f98561;
+    border:none;
+    color: #ffebca;
+    font: 400 25px UbuntuCondensed;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all 0.4s linear;
+     -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+}
+
+.slide_title [type="button"]:hover{
+    background: transparent;
+   opacity: 0.8;
+    border: 1px solid #ffebca;
+}
+
+
+
+#services{
+    width:100%;
+    min-height: 400px;
+    background: url(images/services.png);
+    
+}
+
+
+.s_title{
+    text-align: center;
+   padding: 2%;
+    
+}
+.s_title [type="button"]{
+ width: 146px;
+    height: 40px;
+    background: url(images/btn_group.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: none;
+    
+}
+.s_content{
+text-align: center;
+    float: left;
+    width:15%;
+    margin: 5% 57px;
+}
+.s_cont_title h4{
+    color: #515862;
+    font: 400 17px BreeSerif;
+    font-family: BreeSerif;
+    font-size: 17px;
+    font-weight: 400;
+}
+.s_text p{
+   color: #515862;
+    font: 400 11px / 15px Ubuntu;
+    font-family: Ubuntu;
+    font-size: 11px;
+    text-align: justify;
+    
+  
+}
+.s_text span{
+    color: #3e9dd1;
+    font: 700 11px / 15px Ubuntu;
+    
+}
+.s_text span a:hover{
+    text-decoration: underline;
+    text-decoration-color: #3e9dd1;
+}
+
+
+
+/*portfolio*/
+
+#our_portfolio{
+    width: 100%;
+    min-height: 518px;
+    background: url(images/portfolio.png);
+    background-size: cover;
+    
+    
+}
+
+/*search*/
+.search{
+    float: right;
+    margin: 1.8% auto;
+    color: #000;
+}
+
+input.search-text {
+	color: #000;
+	position:relative;
+	z-index:5;
+	-webkit-transition: z-index 0.8s, width 0.5s, background 0.3s ease, border 0.3s;
+	transition: z-index 0.8s, width 0.5s, background 0.3s ease, border 0.3s;
+	height: 45px;
+	width: 0;
+	margin: 0;
+	padding: 5px 0 5px 40px;
+	box-sizing: border-box;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 30px;
+	border: 2px solid transparent;
+	/*background: url(search.png) no-repeat left 9px center transparent;*/
+	background: url(https://dl.dropboxusercontent.com/u/6624374/opensource-projects/codepen/search.svg) no-repeat left 9px center transparent ;
+ 
+  background-size:24px;
+}
+input.search-text:focus {
+	z-index:3; 
+	width: 200px;
+	border: 1px solid #376200;  
+	background: #fff;
+	outline: none;
+	cursor:auto;
+	padding-right: 10px;
+    color:#000;
+}
+
+input.search-submit {
+	position: relative;
+	z-index: 4;
+	top:17px;
+	left: 49px;
+	width: 20px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	border-radius: 30px;
+	cursor: pointer; 
+	background: none;
+   
+}
+
+input.search-text::-webkit-search-cancel-button {
+	cursor:pointer;
+}
+
+.portfolio_title{
+    text-align: left;
+    float: left;
+ margin: 2% 55px;
+}
+.portfolio_title h4{
+    color: #f98561;
+    font: 400 30px BreeSerif;
+    font-family: BreeSerif;
+    font-size: 30px;
+    font-weight: 400;
+}
+.more_works{
+    float: right;
+    margin: 3% 62px;
+    display: block;
+}
+.more_works [type="button"]{
+    width: 90px;
+    height: 32px;
+    background: url(images/works.png);
+    border:none;
+    transition: all 0.2s linear;
+}.more_works [type="button"]:hover{
+  opacity: 0.8;
+  
+}
+figcaption h4{
+    color: #f98561;
+    font: 400 17px BreeSerif;
+    font-family: BreeSerif;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+figcaption p{
+    color: #bcbcbc;
+    font: 400 11px / 15px Ubuntu;
+    font-family: Ubuntu;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    width:100%;
+}
+#offer{
+    width: 100%;
+    min-height: 900px;
+    background: url(images/offer.png);
+    
+}
+.offer_title{
+    text-align: center;
+    padding: 4%;
+}
+.offer_title p{
+    color: #515862;
+    font: 400 12px Ubuntu;
+    font-size: 12px;
+    font-weight: 400;
+   letter-spacing: 2px;
+    margin-top: 15px;
+    
+}
+.offer_content{
+    float: left;
+    width:20%;
+    margin: 7% 25px;
+    padding: 2%;
+}
+
+.offer_cont_title{
+    text-align: left;
+}
+
+.offer_cont_title h4{
+    color: #2b99cc;
+    font-family: BreeSerif;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.offer_cont_text{
+    text-align: justify;
+}
+
+.offer_button [type="button"]{
+    float: right; 
+    width: 55px;
+    height: 24px;
+    padding: 0.5%;
+}
+
+.testi {
+    text-align: center;
+    padding: 2%;
+    
+}
+.test_text{
+    text-align: center;
+}
+.test_text p{
+    color: #515862;
+    font: 400 25px BreeSerif;
+    font-family: BreeSerif;
+    font-size: 25px;
+    font-weight: 400;
+}
+.members{
+    text-align: center;
+    color: #f98561;
+    font: 400 14px / 15px Ubuntu;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: italic;
+}
+.m_icon{
+    text-align: center;
+    padding: 2%;
+}
+.m_icon li{
+    list-style: none;
+    display: inline;
+}
+
+.m_icon img{
+   padding-bottom: 4px;
+    border-bottom:4px solid #c1c1c1;
+    transition: all 0.5s linear;
+    
+ 
+}
+
+.m_icon .active img{
+      cursor: pointer;
+  border-bottom: 4px solid #f98561;
+}
+
+.m_icon img:hover{
+   cursor: pointer;
+  border-bottom: 4px solid #f98561;
+}
+.back{
+	color:#fff;
+	margin:10px 13px;
+	font-size:25px;
+}
+
+footer{
+    width: 100%;
+    min-height: 339px;
+    background: url(images/footer.png);
+    background-color: #2e3e4f;
+    
+}
+.f_content{
+    margin: 4% 32px;
+    float:left;
+    width: 220px;
+    padding: 14px;
+    
+}
+.f_cont{
+    margin-top: 20px;
+}
+
+.f_cont p{
+    color: #a3afb2;
+    font: 400 12px / 20px Ubuntu;
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.f_cont [type="email"]{
+    width: 220px;
+    height: 28px;
+    background:  #ffffff;
+    border-radius:5px;
+    border: none;
+    padding-left: 10px;
+    margin-top: 15px;
+    outline: none;
+}
+.f_cont [type="submit"]{
+    width: 77px;
+    height: 28px;
+    background: #2190c1;
+    border: none;
+    color: #fff;
+    margin-top: 15px;
+    float: right;
+    transition: all 0.5s ease-in-out;
+    
+}
+.f_cont [type="submit"]:hover{
+    opacity: 0.5;
+}
+.f_cont_img{
+    float: left;
+    margin-right: 10px;
+}
+
+.f_contact_image1{
+    float: left;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+
+/*About Us*/
+
+#about_us{
+    width: 100%;
+    min-height: 600px;
+    background: url(images/about_us.png);
+    
+}
+.about_title{
+    text-align: center;
+    padding: 2%;
+}
+.about_text span{
+    color: #515862;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20.537px;
+    margin-bottom: 10px;
+    
+    
+}
+.about_text p{
+    color: #515862;
+    font: 400 13px / 20.537px Ubuntu;
+    font-weight: 400;
+    
+}
+.about_text{
+    margin-top: 35px;
+}
+.about_title2{
+    text-align: center;
+    padding: 2%;
+}
+.line2{
+    width:100%;
+}
+.about_icon{
+    float:left;
+    width: 203px;
+    text-align: center;
+    padding: 1%;
+    margin: 2% 40px;
+    transition: all 0.5s linear;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+}
+
+
+.about_icon:hover {
+    background: #fff;
+    box-shadow: 2px 2px 5px  #515862;
+    
+}
+
+.icon_title{
+    margin-bottom: -10px;
+}
+
+
+.icon_title h4{
+    color: #2190c1;
+    font: 400 20px / 36px BreeSerif;
+    font-family: BreeSerif;
+    font-size: 20px;
+    font-weight: 400;
+   
+}
+.icon_text p {
+    text-align: inherit;
+}
+
+.icon_content{
+    margin-top: 45px;
+}
+.line3{
+    width: 100%;
+}
+
+/*Our Team*/
+.our_team_title{
+    text-align: center;
+    padding: 2%;
+}
+.our_team_cont{
+    float: left;
+    background-color: #ffffff;
+    width: 380px;
+    padding: 2%;
+    margin: 3% 95px;z-index: 100000;
+    transition: all 0.5s linear;
+    
+}
+
+.our_team_cont:hover{
+  box-shadow: 0px 0px 10px 10px transparent,  10px 10px 0 0  #d3d3d3;
+    
+  
+   
+}
+.our_details{
+    text-align: center;
+}
+.group{
+    margin-top: 22px;
+}
+.our_team_avatar{
+    float: left;
+}
+.our_text{
+    margin-top: 20px;
+}
+/*Contact Us*/
+#contact_us{
+    width:100%;
+    min-height: 600px;
+    background: url(images/contact_us.png);
+    
+}
+.contact_title{
+    text-align: center;
+    padding: 2%;
+}
+.contact_title p{
+    color: #515862;
+    font: 400 12.67px / 20px Ubuntu;
+    font-family: Ubuntu;
+    font-size: 13px;
+    margin-top: 15px;
+    line-height: 20.537px;
+}
+.forms{
+    float: left;
+    width:40%;
+    border-right:1px solid rgba(0, 0, 0, 0.1);
+    margin: 0 30px;
+}
+label{
+    color: #515862;
+    font: 400 13px / 22px Ubuntu;
+    font-family: Ubuntu;
+    font-size: 13px;
+    font-weight: 400;
+}
+.forms [type="text"],[type="email"]{
+    width: 359px;
+    min-height: 33px;
+    background-color: #ffffff;
+    border-color: #ff1f1f;
+    border-width: 0.2px;
+    outline: none;
+}
+.forms [type="text"]:focus,[type="email"]:focus{
+    border:1px solid black;
+}
+
+.forms textarea{
+    
+    width: 358px;
+    min-height: 272px;
+    resize: none;
+    border-color: #515862;
+    border-style: solid;
+    border-width: 0.2px;
+    background-color: #ffffff;
+    outline: none;
+}
+.forms_title{
+    margin-bottom: 20px;
+}
+.code img{
+    float: left;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.code [type="text"]{
+    width: 146px;
+    height: 25px;
+    
+}
+.forms [type="submit"]{
+    margin-top: 10px;
+    width: 94px;
+    height: 32px;
+    background-color: #2190c1;
+    color:#fff;
+    border:none;
+    font: 400 16.01px UbuntuCondensed;
+    transition: all 0.5s ease-in;
+    margin: 10px 50px;
+    
+}
+.forms [type="submit"]:hover{
+    opacity: 0.6;
+}
+.maps{
+    float: right;
+    width:30%;
+}
+.phone2{
+    float: left;
+  margin-right: 10px;
+    width:40px;
+    height: 40px;
+   background: url(images/Shape-98.png);
+    padding: 1.1% 8px;
+}
+.home{
+    float: left;
+    margin-right: 10px;
+      width:40px;
+    height: 40px;
+      background: url(images/Shape-98.png);
+    padding: 1.1% 8px;
+}
+.address{
+    width: 240px;
+}
+.address p{
+    line-height: 22px;
+}
+.email_address{
+    float: left;
+    margin-right: 10px;
+     width:40px;
+    height: 40px;
+      background: url(images/Shape-98.png);
+    padding: 2% 8px;
+}
+.web_address{
+    width: 230px;
+}
+.web_address p{
+   line-height: 22px; 
+}
+.mapsfigure{
+    width: 317px;
+    height: 314px;
+   
+}
+/*Project*/
+#project{
+    width:100%;
+    min-height: 800px;
+    background: url(images/project.png);
+    
+}
+.project_title{
+    text-align: center;
+    padding: 2%;
+    
+}
+.pagination1{
+    text-align: center;
+    
+}
+.pagination1 .pagination li a{
+    background: transparent;
+    border-bottom: none;
+    border-top: none;
+    color: #515862;
+    
+    
+}
+.pagination1 .pagination li:first-child a{
+    border-left: none;
+    border-right: #515862;
+}
+.pagination1 .pagination .active a,.pagination1 .pagination li a:hover{
+    background: none;
+    color: #2190c1;
+    font: 400 16px / 19.43px UbuntuCondensed;
+    
+}
+.pagination2 {
+    text-align: center;
+}
+.pagination2 .pagination li a{
+    margin-right: 10px;
+    background-color: #aaaaaa;
+    border-radius: 4px;
+    border: none;
+    color: #c5f0ff;
+}
+.pagination2 .pagination .active a{
+    background-color: #2190c1;
+}
+.clients{
+    text-align: center;
+}
+.clients_logo{
+    padding: 1%;
+}
+.clients_logo img{
+    margin: 4% 48px;
+}
